@@ -94,24 +94,28 @@ function closeFullScreen() {
     var fullscreenContainer = document.getElementsByClassName("fullscreen-container")[0];
     fullscreenContainer.style.display = "none";
 }
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('overlay').style.display = 'block';
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById('overlay').style.display = 'block';
+// });
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('overlay').style.display = 'block';
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById('overlay').style.display = 'block';
+// });
 
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById('overlay').style.display = 'block';
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//     document.getElementById('overlay').style.display = 'block';
+// });
 
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.forms['google-sheet1'];
-
+    const form = document.forms['google-sheet1'];   
+    const overlay = document.getElementById('overlay');
     const formSubmitted = localStorage.getItem('formSubmitted');
     if (!formSubmitted) {
-        overlay.style.display = 'block';
+        setTimeout(function() {
+            overlay.style.display = 'block';
+        }, 5000); 
+        // overlay.style.display = 'block';
+
         form.addEventListener('submit', function(e) {
             e.preventDefault();
             fetch(scriptURL, {
@@ -126,45 +130,14 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('overlay').style.display = 'none';
         });
     }else{
-        // element.querySelector('img').style.filter = 'blur(3px)';
         document.getElementById('overlay').style.display = 'none';
     }
 
-    // form.addEventListener('submit', function(e) {
-    //     e.preventDefault();
-    //     fetch(scriptURL, {
-    //             method: 'POST',
-    //             body: new FormData(form)
-    //         })
-    //         .then(response => {
-    //             form.reset();
-    //             localStorage.setItem('formSubmitted', 'true');
-    //         })
-    //         .catch(error => console.error('Error!', error.message));
-    //     document.getElementById('overlay').style.display = 'none';
-    // });
 });
 
 document.getElementById('closeBtn').addEventListener('click', function() {
     document.getElementById('overlay').style.display = 'none';
 });
-
-
-
-
-  
-//   document.querySelector(".hamburger").addEventListener("click", () => {
-//     let a=document.querySelector(".navlist");
-//     if(a.style.display == "block"){
-//         a.style.display = "none";
-   
-//         // let a=document.querySelector(".close");
-//         // a.style.display = "block";
-//     }
-    
-//   })
-// const scriptURL='https://script.google.com/macros/s/AKfycbwwHiZmDFNnuNzSKvOLYRaRbn_VFiMRMNSo54sfYWkv3iAJdBxC_d_V-ATPYZEdrLjZ/exec'
-
 
 
 function showPopup(element) {
@@ -178,32 +151,12 @@ function showPopup(element) {
     }else{
         element.querySelector('img').style.filter = 'blur(3px)';
     }
-    // overlay.style.display = 'block';
 }
 
 function hidePopup() {
     const overlay = document.getElementById('overlay');
     overlay.style.display = 'none';
 }
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     const images = document.querySelectorAll('.blur-img'); 
-//     const formSubmitted = localStorage.getItem('formSubmitted');
-//     if (formSubmitted) {
-//         setInterval(function() {
-//             images.forEach(function(image) {
-//                 image.style.filter = 'blur(3px)';
-//             });
-//         }, 0);
-//     }else{
-//         setInterval(function() {
-//             images.forEach(function(image) {
-//                 image.style.filter = 'blur(10px)';
-//             });
-//         }, 0);
-//     }
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
     const images = document.querySelectorAll('.blur-img'); 
     const formSubmitted = localStorage.getItem('formSubmitted');
