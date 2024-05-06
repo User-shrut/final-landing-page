@@ -19,18 +19,18 @@ body{
 .mycontainer{
     display: flex;
     align-items: center;
-   justify-content:flex-start;
 position: fixed;
 /* position: sticky; */
 z-index: 3;
 background-color: white;
 color: black;
-width: 100%;
+width: 99vw;
 gap: 20px;
 z-index: 60;
 height: 13%;
-
-padding-left: 23px;
+padding-left: 3px;
+padding-right: 3px;
+/* padding-left: 23px; */
 
 }
 
@@ -43,24 +43,13 @@ padding-left: 23px;
     gap: 12px;
 }
 .logo2 img{
-    width: 105px;
+    width: 135px;
     height: 62px;
+    position: relative;
+    /* right: -134px; */
 }
-.navlist ul{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 111%;
-}
-.navlist ul li{
-   margin-top:14px;
-   margin-left: 4px;
-    list-style-type:none; 
-    font-weight: bold;
-    font-size:small
-   
-    
-}
+
+
 .navlist ul li span:hover{
     color: rgb(193, 156, 33);
 }
@@ -72,9 +61,9 @@ padding-left: 23px;
 .navlist ul li img{
     width: 20px;
 }
-.navlist ul{
-    padding-left: 1rem;
-}
+/* .navlist ul{
+    padding-left: 4rem;
+} */
 .container1{
     width: 100%;
     height: 100%;
@@ -517,13 +506,13 @@ border-radius: 5px;
  margin-top:0;
 }
 .head-form input{
-    margin-left: 5px;
+    /* margin-left: 5px; */
     width: 98%;
     margin-top:10px;
     height: 50px;
 }
 .head-form{
-    margin-left: 5px;
+    /* margin-left: 5px; */
     width: 98%;
     margin-top:15px;
     height: 50px;
@@ -714,6 +703,194 @@ color:rgb(90, 88, 88);
     right: 20px;
     cursor: pointer;
 }
+.navlist{
+    
+    width: 100%;
+}
+.navlist ul li{
+    /* margin-top:14px;
+    margin-left: 4px; */
+     list-style-type:none; 
+     font-weight: bold;
+     font-size:small;
+     /* gap: 10px; */
+     
+ }
+ .navlist ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    margin-top: 35px;
+    padding-left: 0;
+}
+nav{
+    width: 99vw;
+}
+.head-form input {
+    width: 100%;
+}
+.about{
+    /* background-color: antiquewhite; */
+    padding-top: 20px;
+}
+.amenities{
+    padding-top: 20px;
+}
+.specification{
+    padding-top: 50px;
+}
+.photo{
+    padding-top: 50px;
+}
+.floor-plans{
+   
+    padding-top: 40px;
+}
+.floor-plans h2{
+    padding-top: 40px;
+}
+.price{
+    margin-top: 10;
+    
+}
+.fifth h2{
+    padding-top:30px;
+}
+.overlay {
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.popup h2 {
+    margin-top: 0;
+}
+.popup label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.popup input[type="text"],
+.popup input[type="email"],
+.popup input[type="tel"],
+.popup button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.popup button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.popup button:hover {
+    background-color: #45a049;
+}
+.close-btn {
+    /* background-color: #000000;  */
+    border: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+}
+/* .material-symbols-outlined{
+filter: invert();
+} */
+
+
+/* Define the blinking animation */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+/* Apply the blinking animation to the specified elements */
+.blink {
+    animation: blink 1s infinite;
+}
+
+
+
+.image-qr {
+    position: relative; 
+}
+
+.image-qr  img {
+    height: 70px;
+    width: 70px;
+    /* position: absolute; */
+    /* bottom: 40px; */
+    /* left: 460px; */
+} 
+.adjust img{
+    width: 100px;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.adjust{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   flex-direction: column;
+}
+.adjust span{
+    font-size: xx-small;
+}
+.qradjust{
+    margin-top: 20px;
+display: grid;
+grid-template-columns: 120px 120px 120px;
+grid-template-rows: 120px 120px;
+gap: 4px;
+justify-content: center;
+align-items: center;
+    /* display: flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: row; */
+  
+}
+.maha-rera img{
+    width: 175px;
+    height: 100px;
+}
+.link-maha-rera{
+    margin-top: 10px;
+}
+.link-maha-rera a{
+    text-decoration: none;
+    color: black;
+}
+ .navlist ol, ul {
+    padding-left: 2rem;
+}
 
 @media(max-width:600px){
     .mycontainer{
@@ -721,6 +898,7 @@ color:rgb(90, 88, 88);
     justify-content:center;
     align-items: center;
     width: 100vw;
+    gap: 0;
     }
 .head1{
     height: 70px !important;
@@ -881,11 +1059,29 @@ main{
      margin-bottom: -13rem;
      
  }
+ .form {
+    
+    width: 70vw;
+   
+}
+.contact-info h6 {
+    margin-left: 0%;
+}
+.logo-vastu img {
+    margin-left: 0%;
+    width: 130px;
+}
+.close-btn {
+  
+    top: 39%;
+    right: 8%;
+   
+}
 /* .close{
     display:block;
 } */
 }
-@media(max-width: 992px){
+/* @media(max-width: 992px){
 .head1{
     min-height: auto;
 }
@@ -908,163 +1104,8 @@ main{
     width: 100vw;
     /* margin-left: 10px; */
 }
-
+ */
 /* .close{
     display: block;
 } */
-}
-.about{
-    /* background-color: antiquewhite; */
-    padding-top: 20px;
-}
-.amenities{
-    padding-top: 20px;
-}
-.specification{
-    padding-top: 50px;
-}
-.photo{
-    padding-top: 50px;
-}
-.floor-plans{
-   
-    padding-top: 40px;
-}
-.floor-plans h2{
-    padding-top: 40px;
-}
-.price{
-    margin-top: 10;
-    
-}
-.fifth h2{
-    padding-top:30px;
-}
-.overlay {
-    display: none;
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1000;
-}
-
-.popup {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-.popup h2 {
-    margin-top: 0;
-}
-.popup label {
-    display: block;
-    margin-bottom: 10px;
-}
-
-.popup input[type="text"],
-.popup input[type="email"],
-.popup input[type="tel"],
-.popup button {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-}
-
-.popup button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-.popup button:hover {
-    background-color: #45a049;
-}
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 24px;
-    cursor: pointer;
-}
-/* .material-symbols-outlined{
-filter: invert();
-} */
-
-
-/* Define the blinking animation */
-@keyframes blink {
-    0% { opacity: 1; }
-    50% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-/* Apply the blinking animation to the specified elements */
-.blink {
-    animation: blink 1s infinite;
-}
-
-
-
-.image-qr {
-    position: relative; 
-}
-
-.image-qr  img {
-    height: 70px;
-    width: 70px;
-    /* position: absolute; */
-    /* bottom: 40px; */
-    /* left: 460px; */
-} 
-.adjust img{
-    width: 100px;
-    height: 100px;
-    margin: 0;
-    padding: 0;
-}
-.adjust{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-   flex-direction: column;
-}
-.adjust span{
-    font-size: xx-small;
-}
-.qradjust{
-    margin-top: 20px;
-display: grid;
-grid-template-columns: 120px 120px 120px;
-grid-template-rows: 120px 120px;
-gap: 4px;
-justify-content: center;
-align-items: center;
-    /* display: flex;
-    justify-content:space-between;
-    align-items: center;
-    flex-direction: row; */
-  
-}
-.maha-rera img{
-    width: 175px;
-    height: 100px;
-}
-.link-maha-rera{
-    margin-top: 10px;
-}
-.link-maha-rera a{
-    text-decoration: none;
-    color: black;
 }
