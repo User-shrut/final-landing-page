@@ -24,7 +24,7 @@ position: fixed;
 z-index: 3;
 background-color: white;
 color: black;
-width: 99vw;
+width: 100vw;
 gap: 20px;
 z-index: 60;
 height: 13%;
@@ -46,6 +46,7 @@ padding-right: 3px;
     width: 135px;
     height: 62px;
     position: relative;
+    margin-right: 20px;
     /* right: -134px; */
 }
 
@@ -906,6 +907,7 @@ align-items: center;
 .hamburger {
      display: block;
     cursor: pointer;
+    
 }
 .navlist{
     display: none;
@@ -913,6 +915,12 @@ align-items: center;
 .navlist ul{
     flex-direction: column;
     background-color: white;
+}
+nav{
+    position: relative;
+}
+.navlist ul{
+position: absolute;
 }
 /* .amenitiesparent{
     display: flex;
@@ -1057,6 +1065,9 @@ main{
      font-weight: bold;
      font-size:x-small;
      margin-bottom: -13rem;
+     width:25%;
+     left: 4%;
+
      
  }
  .form {
@@ -1081,7 +1092,7 @@ main{
     display:block;
 } */
 }
-/* @media(max-width: 992px){
+@media(max-width: 992px){
 .head1{
     min-height: auto;
 }
@@ -1104,7 +1115,7 @@ main{
     width: 100vw;
     /* margin-left: 10px; */
 }
- */
+
 /* .close{
     display: block;
 } */
